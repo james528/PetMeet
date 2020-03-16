@@ -1,0 +1,68 @@
+<?php
+    session_start();
+?>
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Pet Meet Template
+        </title>
+        <link rel="stylesheet" type="text/css" href="/PetMeet/registration.css"/>
+        <script language="Javascript" type="text/Javascript"></script>
+    </head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+        <img src="/PetMeet/meetlogo.jpg" alt="UACDOOM Tech">
+        <h1 id="title">Pet Match and Play Date Registration </h1>
+
+        </div> <!-- id="header"-->
+        <div id="hnav">
+        <table width="400" border="0" cellspacing="2" cellpadding="2">
+         <tr>
+            <td><a class="hmenu" href="index.php" >Home</a></td>
+            <td><a class="hmenu" href="about.php" >About</a></td>
+            <td><a class="hmenu" href="support.php" >Support</a></td>
+            <td><a class="hmenu" href="maintain.php" >Maintain</a></td>
+         </tr>      
+        </table>
+        </div><!--id="hnav"-->
+
+        <div id="vnav">
+         <table width="120" border="0" cellspacing="2" cellpadding="2">
+           <tr>
+               <th class="vhead"> GO TO:</th>
+           </tr>
+           <tr>
+             <td><a class="vmenu" href="petList.php">Pet List</a> </td>             
+           </tr>
+           <tr>
+               <td><a class="vmenu" href="PetEntry.php">PetEntry</a></td>
+           </tr>
+         </table>
+        </div><!--id="vnav"-->
+
+        <div id="main">
+         <h1 id="mainhead">Weekly Pet Date Schedule </h1>
+         <p id="mainpara">Click Register to set a Play Date</p>
+         <p class="red">*A a footnote, will be used later?</p> 
+        </div><!--id="main"-->
+        <div id="footer">
+            <p id="copyright"> Copyright &copy:2020 -
+                <?php
+                    date_default_timezone_set('America/Vancouver');
+                echo date('Y');
+                ?>
+                UACDOOM Technology
+            </p>
+            <p id="contact">
+                <a href="mailto:info@UACDOOMtechnology.com">
+                    Contact us by clicking here.</a>
+            </p>            
+        </div><!--id="footer"-->
+    </div><!-- id="wrapper" -->
+</body>
+
+</html>
